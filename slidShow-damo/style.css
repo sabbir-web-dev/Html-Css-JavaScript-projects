@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    background:#f3f397 ;
+    padding:0;
+}
+.continer{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:opacity 1s ease;
+}
+i{
+    font-size: 6rem;
+    transform: scale(0);
+
+}
+.tran{
+    transform: scale(1);
+}
+
+button {
+    padding:2px 10px;
+    cursor: pointer;
+    margin-top:20px;
+
+    transition :background .4s ease;
+}
+button:hover{
+    background:#dada7d;
+}
+
+span{
+    font-size: 50px;
+    text-align: center;
+}
+
+.spanColor {
+    color:#98ffdd
+}

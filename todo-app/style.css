@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+:root{
+    --full-bg: #353535 ;
+    --card-bg: #222;
+    --text-color:#161414;
+    --color:#fff;
+    --hover: #ffaa00;
+    --icon-bg:#ddd;
+    --todo--bg:#191818;
+}
+html{
+    scroll-behavior: smooth;
+}
+.full-wrap{
+    width: 100%;
+    background: var(--full-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    padding: 12px;
+    width:60%;
+    max-width: 380px;
+    max-height: 500px;
+    min-height: 500px;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+}
+.card-title{
+    padding: 20px 0px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    color:var(--color);
+}
+.todo-form{
+    display: flex;
+    justify-content: space-between;
+    gap:1%;
+    margin-bottom: 10px;
+}
+.input{
+    flex:2;  
+    padding:4px 6px;
+    border-radius: 6px 6px;
+    font-size: 18px;
+    border:none;
+}
+.btn{
+    flex: .5;
+    border-radius: 6px 6px ;
+    background-color: var(--hover);
+    color:var(--color);
+    border:none;
+    cursor:pointer;
+    transition: background .3s ease;
+}
+.btn:hover{
+    background: var(--full-bg);
+}
+.card-aria{
+    margin-bottom: 10px;
+    background-color: var(--todo--bg);
+    border-radius: 8px;
+    padding: 6px 10px;
+    color:var(--color);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-body{
+    max-height: 330px;
+    min-height: 365px;
+    overflow-y: scroll;
+    scrollbar-width: 1px;
+}
+.todo-body::-webkit-scrollbar{
+    width:6px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.todo-body::-webkit-scrollbar-thumb{
+    background-color: var(--card-bg);
+    border-radius: 5px;
+}
+.todo-body::-webkit-scrollbar-track{
+    background: var(--full-bg);
+    border-radius: 5px;
+}
+.todo{
+    flex:2;
+}
+.delet{
+    flex:.1;
+    background: var(--hover);
+    padding:4px;
+    border-radius: 7px;
+    cursor: pointer;
+    color:red;
+    transition:.3s ease;
+}
+.delet:hover{
+    background-color: red;
+    color:#fff;
+}
+.add-Message{
+    width: 95%;
+    margin:0 auto;
+    padding:6px;
+    color:#fff;
+    font-family: sans-serif;
+    background: #87c386;
+    border-radius: 0px 3ox 3px 0px;
+    border-left: 4px solid #0aff33;
+}
+.del-Message{
+    width: 95%;
+    margin:0 auto;
+    padding:6px;
+    color:#fff;
+    font-family: sans-serif;
+    background: #fac9c9da;
+    border-radius: 0px 3ox 3px 0px;
+    border-left: 4px solid #ff2200;
+}
